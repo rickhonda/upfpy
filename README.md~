@@ -1,0 +1,28 @@
+# upfpy
+
+https://www.youtube.com/watch?v=GIF3LaRqgXo&t=1169s
+https://packaging.python.org/guides/making-a-pypi-friendly-readme/
+
+Fundamental Theorm of Arithmetic
+
+## Installation 
+
+Run the following to install: 
+
+...python
+pip install ufd.py
+
+## Usage
+
+...python
+from upf import factor
+upf.py module name is upf
+
+# factor(3)
+[0, 1]
+# factor(33)
+[0, 1, 0, 0, 1]
+# factor(32)
+[5]
+
+
