@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='upf',
-    version='0.0.4',
+    version='0.0.5',
     description='Fully Factor integers and build a flatfile database; unique prime factorization',
     py_modules=["upf"],
     package_dir={'': 'src'},

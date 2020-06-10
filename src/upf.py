@@ -2,9 +2,11 @@ import csv, math
 from operator import add
 from sympy import prime, primepi
 
+loc = 'vectors.txt'
+
 import os.path
-if os.path.exists('upfpy/src/vectors.txt') == False:
-    with open('upfpy/src/vectors.txt', 'w') as csv_file:
+if os.path.exists(loc) == False:
+    with open(loc, 'w') as csv_file:
         writer = (csv.writer(csv_file, delimiter=','))
         writer.writerow('2')
         writer.writerow([])
@@ -13,7 +15,7 @@ if os.path.exists('upfpy/src/vectors.txt') == False:
 
 class UFD:
     def __init__(self):
-        with open('upfpy/src/vectors.txt') as csv_file:
+        with open(loc) as csv_file:
             csv_reader = list(csv.reader(csv_file, delimiter=','))
             cur = 0
             for row in csv_reader:
@@ -40,7 +42,7 @@ class UFD:
                 set_size +=1
 #                print('while executed')
             
-            with open('upfpy/src/vectors.txt', 'w') as update_vectors:                                            # Make this replace and append rather
+            with open(loc, 'w') as update_vectors:                                            # Make this replace and append rather
                 writer = (csv.writer(update_vectors, delimiter=','))                                    # than rewrite the entire thing each time
                 writer.writerow(self.primes)
                 writer.writerows(self.vectors)
