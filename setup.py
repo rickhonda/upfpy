@@ -5,15 +5,13 @@ with open("README.md", "r") as fh:
 
 setup(
     name='upf',
-    version='0.0.2',
+    version='0.0.3',
     description='Fully Factor integers and build a flatfile database; unique prime factorization',
     py_modules=["upf"],
     package_dir={'': 'src'},
 
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         ],

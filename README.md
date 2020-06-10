@@ -9,8 +9,8 @@ The values of the list indices are such that the nth index contains the power on
 
 Run the following to install: 
 
-...python\n
-...pip install upfpy
+...python
+...pip install upf
 
 ## Usage
 
