@@ -2,6 +2,7 @@ import csv, math
 from operator import add
 from sympy import prime, primepi
 
+#loc = 'upfpy/src/vectors.txt'
 loc = 'vectors.txt'
 
 import os.path

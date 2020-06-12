@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = ">=3.7"
+pytest = ">=3.8"
 twine = "*"
 
 [packages]

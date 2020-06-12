@@ -1,7 +1,4 @@
-from upf import *
-
-
-
+from upfpy.src.upf import *
 
 if __name__ == "__main__":
     import upf.__main__
