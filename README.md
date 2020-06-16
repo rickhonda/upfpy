@@ -10,9 +10,9 @@ These lists are stored in a file called vectors.txt as csv. The reason I made th
 
 ## Installation 
 
-Run the following to install: 
+Run the following to install:  
 
-pip install upf
+pip install upf  
 
 ## Usage
 
@@ -33,36 +33,36 @@ The forth row represents the integer 2 and contains a '1'; because...
 2 = (2\*\*1)\*(3\*\*0)\*(5\*\*0)... = [1,0,0,...] = [1]
 
 ...python
->>> from upfpy.src import *
-upf.py module name is upfpy.src.upf
-/Users/shunhonda/Active/upfpy/src
->>> factor(30)
-[1,1,1]
+>>> from upfpy.src import *  
+upf.py module name is upfpy.src.upf  
+/Users/shunhonda/Active/upfpy/src  
+>>> factor(30)  
+[1,1,1]  
 
 There is one class, UFD() in upf and it has two subclasses Generate() and Show(); I will relocate and change this. Generate() is used to calculate vectors that arent already in vectors.txt and writes them to there as needed. 
 
 If you exectued factor(30) as earlier you could execute:
 
->>> UFD().primes
+>>> UFD().primes  
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
-also note:
+also note:  
 
->>> UFD().vectors[1:6]
+>>> UFD().vectors[1:6]    
 [[0], [1], [0, 1], [2], [0, 0, 1]]
 
-and:
+and:  
 
->>> UFD().show()
-0 []
-1 [0]
-2 [1]
-3 [0, 1]
-4 [2]
-5 [0, 0, 1]
-...
-28 [2, 0, 0, 1]
-29 [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
-30 [1, 1, 1]
+>>> UFD().show()  
+0 []  
+1 [0]  
+2 [1]  
+3 [0, 1]  
+4 [2]  
+5 [0, 0, 1]  
+...  
+28 [2, 0, 0, 1]  
+29 [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]  
+30 [1, 1, 1]  
 
 
