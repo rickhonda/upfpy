@@ -8,7 +8,7 @@ pytest = ">=3.8"
 twine = "*"
 
 [packages]
-upf = {editable = true, path = "."}
+setuptools = {editable = true, path = "."}
 
 [requires]
 python_version = "3.8"

@@ -1,4 +1,4 @@
-# UfpPy 
+# UpfPy 
 
 This package includes a function, factor(); it takes an integer and returns a list. 
 
@@ -33,9 +33,8 @@ The forth row represents the integer 2 and contains a '1'; because...
 2 = (2\*\*1)\*(3\*\*0)\*(5\*\*0)... = [1,0,0,...] = [1]
 
 ...python
->>> from upfpy.src import *  
+&lt;&lt;&lt;from upfpy.src import *  
 upf.py module name is upfpy.src.upf  
-/Users/shunhonda/Active/upfpy/src  
 >>> factor(30)  
 [1,1,1]  
 
