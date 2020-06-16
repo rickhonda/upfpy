@@ -32,27 +32,27 @@ The forth row represents the integer 2 and contains a '1'; because...
 
 2 = (2\*\*1)\*(3\*\*0)\*(5\*\*0)... = [1,0,0,...] = [1]
 
-...python
-&lt;&lt;&lt;from upfpy.src import *  
+...python  
+&gt;&gt;&gt; from upfpy.src import *  
 upf.py module name is upfpy.src.upf  
->>> factor(30)  
+&gt;&gt;&gt; factor(30)  
 [1,1,1]  
 
 There is one class, UFD() in upf and it has two subclasses Generate() and Show(); I will relocate and change this. Generate() is used to calculate vectors that arent already in vectors.txt and writes them to there as needed. 
 
 If you exectued factor(30) as earlier you could execute:
 
->>> UFD().primes  
+&gt;&gt;&gt; UFD().primes  
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 
 also note:  
 
->>> UFD().vectors[1:6]    
+&gt;&gt;&gt; UFD().vectors[1:6]    
 [[0], [1], [0, 1], [2], [0, 0, 1]]
 
 and:  
 
->>> UFD().show()  
+&gt;&gt;&gt; UFD().show()  
 0 []  
 1 [0]  
 2 [1]  
