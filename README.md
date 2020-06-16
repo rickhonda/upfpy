@@ -30,7 +30,7 @@ which is not true in python but it's true in math and we are modeling this struc
 
 The forth row represents the integer 2 and contains a '1'; because... 
 
-2 = (2**1)*(3**0)*(5**0)... = [1,0,0,...] = [1]
+2 = (2\*\*1)\*(3\*\*0)\*(5\*\*0)... = [1,0,0,...] = [1]
 
 ...python
 >>> from upfpy.src import *
