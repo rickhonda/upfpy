@@ -18,13 +18,13 @@ pip install upf
 
 The first time upfpy is imported it will create a file, vectors.txt; from here on out will refer to the lists produced by factor() as vectors. The inital file contains four rows. 
 
-The first row will be a csv list of primes and the initial file will just have a 2 here. When factor() is a number, say N, greater than 2, all the primes less than N will appended here after a comma; it will append N if N is prime. The subsequent rows are vectors, i.e., unique prime factor lists.
+The first row will be a csv list of primes and the initial file will just have a 2 here. When factor() is given a number, say N, greater than 2, all the primes less than N will appended here after a comma; it will append N if N is prime. The subsequent rows are vectors, i.e., unique prime factor lists.
 
-The second row will contain a empty bracket [], this represents the integer zero and is the null or empty vector.
+The second row will contain an empty bracket [ ], this represents the integer zero and is the null or empty vector.
 
 The third row represents the number one and contains a '0'. Consider: 
 
-1 = (2**0)*(3**0)*(5**0)*(7**0)...(n**0)... = [0,0,0,0,...] = [0]; where n is the nth prime 
+1 = (2\*\*0)\*(3\*\*0)\*(5\*\*0)\*(7\*\*0)...(n\*\*0)... = [0,0,0,0,...] = [0]; where n is the nth prime 
 
 which is not true in python but it's true in math and we are modeling this structure using python.
 
