@@ -12,7 +12,7 @@ These lists are stored in a file called vectors.txt as csv. The reason I made th
 
 Run the following to install:  
 
-pip install -i ht<span>tps://</span>test.pypi.org/simple/ upfpy
+pip install upfpy  
 
 ## Usage
 
