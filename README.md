@@ -4,7 +4,7 @@ This package includes a function, factor(); it takes an integer and returns a li
 
 This list represents the Unique Prime Factorization of a given integer. 
 
-https://simple.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
+https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
 
 The values of the list indices are such that the nth index contains the power on the nth prime in the Unique Prime Factorization of the given integer so that 2=[1], 3=[0,1] and 12=[2,1] and so fourth; the list terminates when the rest of the subsequent values are all zero. 
 
