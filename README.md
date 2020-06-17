@@ -33,7 +33,7 @@ The forth row represents the integer 2 and contains a '1'; because...
 2 = (2\*\*1)\*(3\*\*0)\*(5\*\*0)... = [1,0,0,...] = [1]
 
 ...python  
-&gt;&gt;&gt; from upfpy.upf import *  
+&gt;&gt;&gt; from upfpy import *  
 &gt;&gt;&gt; factor(30)  
 [1,1,1]  
 
