@@ -113,7 +113,7 @@ class UFD:
                 if (len(self.vectors) - 1) >= i:
                     # If yes indexwise add L and the ith vector in self.vectors and set it to L
                     L = self.plus(L,self.vectors[i])
-                # If i isn't in self.vectors by now it must be prime
+                # If i isn't in self.vectors by now, it must be prime
                 else:
                     self.primes.append(i)
                     # consturct a prime vector
