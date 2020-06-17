@@ -41,7 +41,7 @@ The forth row represents the integer 2 and contains a '1'; because...
 &gt;&gt;&gt; factor(30)  
 [1,1,1]  
 
-There is one class, UFD() in upf and it has two subclasses Generate() and Show(); I will relocate and change this. Generate() is used to calculate vectors that arent already in vectors.txt and writes them to there as needed. 
+There is one class, UFD() in upfpy and it has two subclasses Generate() and Show(); I will relocate and change this. Generate() is used to calculate vectors that arent already in vectors.txt and writes them to there as needed. 
 
 If you exectued factor(30) as earlier you could execute:
 
