@@ -1,4 +1,4 @@
-from upf import factor
+from upfpy import factor
 import sys
 
 def main():
