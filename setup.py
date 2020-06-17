@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='upfpy',
-    version='0.0.7',
+    version='0.0.8',
     author="Rick Honda",
     author_email="rickhonda7@gmail.com",
     description='Fully factors given integer: unique prime factorization',
