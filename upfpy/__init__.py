@@ -1,5 +1,5 @@
 #upfpy
-from .upf import factor
+from .upf import *
 
 if __name__ == "__main__":
     import upfpy.__main__
