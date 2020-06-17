@@ -4,6 +4,8 @@ This package includes a function, factor(); it takes an integer and returns a li
 
 This list represents the Unique Prime Factorization of a given integer. 
 
+https://simple.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic
+
 The values of the list indices are such that the nth index contains the power on the nth prime in the Unique Prime Factorization of the given integer so that 2=[1], 3=[0,1] and 12=[2,1] and so fourth; the list terminates when the rest of the subsequent values are all zero. 
 
 These lists are stored in a file called vectors.txt as csv. The reason I made this is partly to generate that file. Next we will be adding a number of basic functions to analyze that file which is really a model of the prime factor structure inside integers; and also I want to make it faster and make it reflect other aspects of prime numbers such as all primes greater than 3 are either 1 or 5 modulo 6.
