@@ -1,5 +1,4 @@
 import csv, math, pathlib, os.path
-from sympy import prime, primepi
 
 loc = str(pathlib.Path(__file__).parent) + "/vectors.txt"
 
@@ -98,14 +97,16 @@ class UFD:
         def dcomp(self,I):
             i = I
             L = []
-            cur = 1
+            cur = 0
             # Cycle through each prime up to sqrt(I), count number of factors and append to L.
-            while i != 1 and prime(cur) <= math.sqrt(I):          
-                exponent_of_p = self.XfactN(prime(cur),i)         
+            # note: I = 3 will skip this while, I = 4 will enter it.
+            # note: when i becomes 1, I was composite; i.e., not prime
+            while i != 1 and self.primes[cur] <= math.sqrt(I):          
+                exponent_of_p = self.XfactN(self.primes[cur],i)         
                 L.append(exponent_of_p)
                 # If prime(cur) divides i(i.e., expontent_of_p is non-zero), factor it out.
                 if exponent_of_p != 0:
-                    i = i//(prime(cur)**exponent_of_p)
+                    i = i//(self.primes[cur]**exponent_of_p)
                 cur += 1
             # If we reach sqrt(I) and i is still not one, i is either already in self.vectors or i is prime
             if i > 1:
@@ -117,7 +118,7 @@ class UFD:
                 else:
                     self.primes.append(i)
                     # consturct a prime vector
-                    L = (primepi(I)-1)*[0]
+                    L = (len(self.primes) - 1)*[0]
                     L.append(1)                                 
             return L
 
