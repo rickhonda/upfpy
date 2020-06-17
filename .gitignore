@@ -139,6 +139,6 @@ dmypy.json
 
 #myadd
 *~
-src/vectors.txt
+upfpy/vectors.txt
 pyvenv.cfg
 bin/

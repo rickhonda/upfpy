@@ -12,7 +12,7 @@ These lists are stored in a file called vectors.txt as csv. The reason I made th
 
 Run the following to install:  
 
-pip install -i https://test.pypi.org/simple/ upfpy==0.0.2
+pip install -i ht<span>tps://</span>test.pypi.org/simple/ upfpy
 
 ## Usage
 
@@ -20,7 +20,7 @@ The first time upfpy is imported it will create a file, vectors.txt; from here o
 
 The first row will be a csv list of primes and the initial file will just have a 2 here. When factor() is given a number, say N, greater than 2, all the primes less than N will appended here after a comma; it will append N if N is prime. The subsequent rows are vectors, i.e., unique prime factor lists.
 
-The second row will contain an empty bracket [ ], this represents the integer zero and is the null or empty vector.
+The second row will contain an empty bracket [ ], this represents the integer zero and is the "null" or "empty" vector.
 
 The third row represents the number one and contains a '0'. Consider: 
 
