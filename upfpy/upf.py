@@ -142,8 +142,29 @@ def factor(x):
     return UFD().vectors[x]
 
 
+def prime(x):
+    if x <= 0: print("Operand must be 1 or greater")
+    else:
+        set_size = len(UFD().vectors) - 1
+        cur = 1
+        h = (set_size - set_size%6)//6
+        while (len(UFD().primes) - 1) < x:
+            UFD().generate(6*(h + 1)+5)
+            h = h + 1
+        return UFD().primes[x-1]        
 
+"""
+def format(a,b):
+    pass
 
+def slice(x,b):
+    print(prime(x))
+    for i in range(b):
+        if len(UFD().vectors(i)) < prime(x)
+        print(i, UFD().vectors(i)[x]
+    
+    pass
+"""
 
 
 
