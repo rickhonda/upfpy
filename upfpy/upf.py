@@ -1,6 +1,7 @@
 import csv, math, pathlib, os.path
 
 loc = str(pathlib.Path(__file__).parent) + "/vectors.txt"
+#loc = str(pathlib.Path(__file__).parent) + "/vectors.txt"
 
 """
 If the file vectors.txt does not exist in the same directory, create it.
@@ -49,8 +50,11 @@ class UFD:
         def __init__(self,N):
             # set_size is the number of factored integers in self.vectors
             set_size = len(self.vectors) - 1
+#            largest_integer = len(self.vectors) - 1
+#            set_size = len(self.vectors)
             # Construct the next vector and append it to self.vectors up to N
             while set_size < N:
+#            while set_size <= N:
                 self.vectors.append(self.dcomp(set_size + 1))
                 set_size +=1
                 
