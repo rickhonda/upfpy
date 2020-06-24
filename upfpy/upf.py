@@ -155,21 +155,4 @@ def prime(x):
         while (len(UFD().primes) - 1) < x:
             UFD().generate(6*(h + 1)+5)
             h = h + 1
-        return UFD().primes[x-1]        
-
-"""
-def format(a,b):
-    pass
-
-def slice(x,b):
-    print(prime(x))
-    for i in range(b):
-        if len(UFD().vectors(i)) < prime(x)
-        print(i, UFD().vectors(i)[x]
-    
-    pass
-"""
-
-
-
-
+        return UFD().primes[x-1]
