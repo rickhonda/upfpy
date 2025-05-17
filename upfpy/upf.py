@@ -129,8 +129,8 @@ class UFD:
         def __init__(self):
             cur = 0
             for i in self.vectors:
-            print(cur, i)
-            cur += 1
+                print(cur, i)
+                cur += 1
 
         def pretty(self, max_int=277):
             # Slice to only include vectors up to max_int
