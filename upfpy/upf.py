@@ -129,8 +129,23 @@ class UFD:
         def __init__(self):
             cur = 0
             for i in self.vectors:
-                print(cur,i)
-                cur += 1
+            print(cur, i)
+            cur += 1
+
+        def pretty(self, max_int=277):
+            # Slice to only include vectors up to max_int
+            truncated = self.vectors[:max_int + 1]
+        
+            # Determine the width for right-aligning integers
+            max_width = len(str(max_int))
+
+            # Determine the longest vector length
+            max_len = max(len(v) for v in truncated)
+
+            for i, vec in enumerate(truncated):
+                padded_vec = vec + [0] * (max_len - len(vec))  # Pad with zeros
+                print(f"{i:>{max_width}}: {padded_vec}")
+
 
 """
 Takes an integer x and returns vector representing the unique prime factorizaiton of x.
